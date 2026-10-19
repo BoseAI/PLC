@@ -276420,7 +276420,7 @@ auto push-button is pressed
 <![CDATA[GUARD LOCKING 3-4]]>
 </Comment>
 <Text>
-<![CDATA[XIO(BB.Automatic_CycleActive)XIC(IN.B1403_01)XIC(IN.B1404_01)XIC(IN.S1491_01)[TON(Timers.N[100],?,?) ,XIC(Timers.N[100].DN) ONS(UM_Machine.axPTrig[60]) [XIO(OUT.K1470_02) [OTL(OUT.K1470_02) ,OTL(L_auxLock) ] ,XIC(OUT.K1470_02) XIO(L_auxLock) OTU(OUT.K1470_02) ,OTU(L_auxLock) ] ];]]>
+<![CDATA[XIO(BB.Automatic_CycleActive)XIC(DB_ChkSafeCircuit_Door_3_4.i_xGuardClosed)XIC(IN.S1491_01)[TON(Timers.N[100],?,?) ,XIC(Timers.N[100].DN) ONS(UM_Machine.axPTrig[60]) [XIO(OUT.K1470_02) [OTL(OUT.K1470_02) ,OTL(L_auxLock) ] ,XIC(OUT.K1470_02) XIO(L_auxLock) OTU(OUT.K1470_02) ,OTU(L_auxLock) ] ];]]>
 </Text>
 </Rung>
 <Rung Number="2" Type="N">
@@ -276430,7 +276430,7 @@ auto push-button is pressed
 </Rung>
 <Rung Number="3" Type="N">
 <Text>
-<![CDATA[XIO(OUT.K1470_02)[XIO(OUT.K1470_02) XIC(IN.B1403_01) XIC(IN.B1404_01) OTL(MSG[15]) ,OTL(BB.Rq_AlrmPushButton) ];]]>
+<![CDATA[XIO(OUT.K1470_02)[XIO(OUT.K1470_02) XIC(DB_ChkSafeCircuit_Door_3_4.i_xGuardClosed) OTL(MSG[15]) ,OTL(BB.Rq_AlrmPushButton) ];]]>
 </Text>
 </Rung>
 <Rung Number="4" Type="N">
