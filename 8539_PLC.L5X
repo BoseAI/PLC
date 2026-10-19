@@ -271216,44 +271216,6 @@ CYCLE
 </Structure>
 </Data>
 </Tag>
-<Tag Name="DB_ChkSafeCircuit_PalletA" TagType="Base" DataType="ChkSafeCircuit" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[[283,[660827,2000,0],[1640472,2000,0]]]]>
-</Data>
-<Data Format="Decorated">
-<Structure DataType="ChkSafeCircuit">
-<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
-<DataValueMember Name="EnableOut" DataType="BOOL" Value="1"/>
-<DataValueMember Name="i_xCircuitON" DataType="BOOL" Value="0"/>
-<DataValueMember Name="i_xGuardClosed" DataType="BOOL" Value="1"/>
-<DataValueMember Name="i_xResetRqMachine" DataType="BOOL" Value="1"/>
-<DataValueMember Name="i_xResetRqLocal" DataType="BOOL" Value="0"/>
-<DataValueMember Name="i_xBarrierCircuitON" DataType="BOOL" Value="0"/>
-<DataValueMember Name="q_xReady" DataType="BOOL" Value="0"/>
-<DataValueMember Name="q_xAlrmRqResetCircuit" DataType="BOOL" Value="1"/>
-<DataValueMember Name="q_xAlrmDiag" DataType="BOOL" Value="0"/>
-</Structure>
-</Data>
-</Tag>
-<Tag Name="DB_ChkSafeCircuit_PalletB" TagType="Base" DataType="ChkSafeCircuit" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[[283,[660827,2000,0],[819166,2000,0]]]]>
-</Data>
-<Data Format="Decorated">
-<Structure DataType="ChkSafeCircuit">
-<DataValueMember Name="EnableIn" DataType="BOOL" Value="1"/>
-<DataValueMember Name="EnableOut" DataType="BOOL" Value="1"/>
-<DataValueMember Name="i_xCircuitON" DataType="BOOL" Value="0"/>
-<DataValueMember Name="i_xGuardClosed" DataType="BOOL" Value="1"/>
-<DataValueMember Name="i_xResetRqMachine" DataType="BOOL" Value="1"/>
-<DataValueMember Name="i_xResetRqLocal" DataType="BOOL" Value="0"/>
-<DataValueMember Name="i_xBarrierCircuitON" DataType="BOOL" Value="0"/>
-<DataValueMember Name="q_xReady" DataType="BOOL" Value="0"/>
-<DataValueMember Name="q_xAlrmRqResetCircuit" DataType="BOOL" Value="1"/>
-<DataValueMember Name="q_xAlrmDiag" DataType="BOOL" Value="0"/>
-</Structure>
-</Data>
-</Tag>
 <Tag Name="diDataDWord" TagType="Base" DataType="DINT" Dimensions="40" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
 <Comments>
 <Comment Operand="[2]">
@@ -275733,23 +275695,18 @@ Data system displayed maximun limit]]>
 </Structure>
 </Data>
 </Tag>
-<Tag Name="xArea_A_GuardClosed" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[1]]>
-</Data>
-<Data Format="Decorated">
-<DataValue DataType="BOOL" Radix="Decimal" Value="1"/>
-</Data>
-</Tag>
-<Tag Name="xArea_B_GuardClosed" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[1]]>
-</Data>
-<Data Format="Decorated">
-<DataValue DataType="BOOL" Radix="Decimal" Value="1"/>
-</Data>
-</Tag>
 <Tag Name="xCipDrive_Ready" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Data Format="L5K">
+<![CDATA[0]]>
+</Data>
+<Data Format="Decorated">
+<DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
+</Data>
+</Tag>
+<Tag Name="xDoor34_Ready" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[Door 3-4 zone ready (ChkSafeCircuit q_xReady)]]>
+</Description>
 <Data Format="L5K">
 <![CDATA[0]]>
 </Data>
@@ -276081,7 +276038,7 @@ Data system displayed maximun limit]]>
 <![CDATA[CHF SAFE CIRCUIT DOOR 3 - 4]]>
 </Comment>
 <Text>
-<![CDATA[XIC(IN.T0130_02_24V)[XIC(IN.B1403_01) XIC(IN.B1404_01) OTE(DB_ChkSafeCircuit_Door_3_4.i_xGuardClosed) ,ChkSafeCircuit(DB_ChkSafeCircuit_Door_3_4,IN.K1403_04,DB_ChkSafeCircuit_Door_3_4.i_xGuardClosed,IN.S1100_04,OUT.K1470_02,0,BB.Rq_AlrmGuard,BB.Rq_AlrmGuard,ALRM[22],ALRM[23]) ];]]>
+<![CDATA[XIC(IN.T0130_02_24V)[XIO(IN.B1403_01) XIO(IN.B1404_01) OTE(DB_ChkSafeCircuit_Door_3_4.i_xGuardClosed) ,ChkSafeCircuit(DB_ChkSafeCircuit_Door_3_4,IN.K1403_04,DB_ChkSafeCircuit_Door_3_4.i_xGuardClosed,IN.S1100_04,OUT.K1470_02,0,BB.Rq_AlrmGuard,xDoor34_Ready,ALRM[22],ALRM[23]) ];]]>
 </Text>
 </Rung>
 <Rung Number="15" Type="N">
@@ -276134,49 +276091,6 @@ Data system displayed maximun limit]]>
 </Text>
 </Rung>
 <Rung Number="23" Type="N">
-<Text>
-<![CDATA[XIC(DB_Pal_RobotIO.DO.x40)TOF(Timers.N[204],?,?);]]>
-</Text>
-</Rung>
-<Rung Number="24" Type="N">
-<Text>
-<![CDATA[[XIC(IN.B7801) ,XIC(UM_Config.PAL.DoubleDoor) XIC(IN.B7802) ][XIO(OM_Interface.PalOutfeed_xAlarmCarterAInhibition) ,XIO(Timers.N[204].DN) ][OTE(ALRM[564]) ,XIO(OM_Interface.PalOutfeed_xAlarmCarterAInhibition) OTL(BB.Rq_AlrmGuard) ];]]>
-</Text>
-</Rung>
-<Rung Number="25" Type="N">
-<Text>
-<![CDATA[XIC(DB_Pal_RobotIO.DO.x41)TOF(Timers.N[205],?,?);]]>
-</Text>
-</Rung>
-<Rung Number="26" Type="N">
-<Text>
-<![CDATA[XIC(UM_Config.PAL.PalletB)[XIC(IN.B8001) ,XIC(UM_Config.PAL.DoubleDoor) XIC(IN.B8002) ][XIO(OM_Interface.PalOutfeed_xAlarmCarterBInhibition) ,XIO(Timers.N[205].DN) ][OTE(ALRM[565]) ,XIO(OM_Interface.PalOutfeed_xAlarmCarterBInhibition) OTL(BB.Rq_AlrmGuard) ];]]>
-</Text>
-</Rung>
-<Rung Number="27" Type="N">
-<Text>
-<![CDATA[XIC(OM_Interface.PalOutfeed_xAlarmCarterAInhibition)OTU(OM_Interface.PalOutfeed_xAlarmCarterAInhibition);]]>
-</Text>
-</Rung>
-<Rung Number="28" Type="N">
-<Text>
-<![CDATA[XIC(OM_Interface.PalOutfeed_xAlarmCarterBInhibition)OTU(OM_Interface.PalOutfeed_xAlarmCarterBInhibition);]]>
-</Text>
-</Rung>
-<Rung Number="29" Type="N">
-<Text>
-<![CDATA[XIO(IN.B7801)[XIO(IN.B7802) ,XIO(UM_Config.PAL.DoubleDoor) ]OTE(xArea_A_GuardClosed);]]>
-</Text>
-</Rung>
-<Rung Number="30" Type="N">
-<Comment>
-<![CDATA[A  = Palletizing Area]]>
-</Comment>
-<Text>
-<![CDATA[ChkSafeCircuit(DB_ChkSafeCircuit_PalletA,IN.K7810_01,xArea_A_GuardClosed,IN.S1100_04,IN.S7811_01,IN.B7910_01,BB.Rq_AlrmGuard,OM_Interface.PalOutfeed_xPalASafetyGuard_ON,ALRM[601],ALRM[606]);]]>
-</Text>
-</Rung>
-<Rung Number="31" Type="N">
 <Comment>
 <![CDATA[B  = Infeed Pallet Area]]>
 </Comment>
@@ -276184,22 +276098,12 @@ Data system displayed maximun limit]]>
 <![CDATA[NOP();]]>
 </Text>
 </Rung>
-<Rung Number="32" Type="N">
-<Text>
-<![CDATA[XIO(IN.B8001)[XIO(IN.B8002) ,XIO(UM_Config.PAL.DoubleDoor) ]OTE(xArea_B_GuardClosed);]]>
-</Text>
-</Rung>
-<Rung Number="33" Type="N">
-<Text>
-<![CDATA[ChkSafeCircuit(DB_ChkSafeCircuit_PalletB,IN.K8010_01,xArea_B_GuardClosed,IN.S1100_04,IN.S8011_01,IN.B7920_01,BB.Rq_AlrmGuard,OM_Interface.PalOutfeed_xPalBSafetyGuard_ON,ALRM[602],ALRM[607]);]]>
-</Text>
-</Rung>
-<Rung Number="34" Type="N">
+<Rung Number="24" Type="N">
 <Text>
 <![CDATA[XIO(BB.Machine_MovingForSubModule)OTU(BB.Machine_SafetyCircuitOff_ForSubModule);]]>
 </Text>
 </Rung>
-<Rung Number="35" Type="N">
+<Rung Number="25" Type="N">
 <Text>
 <![CDATA[[XIO(IN.K1440_01) ,XIC(BB.Rq_AlrmGuard) ,XIC(BB.Rq_AlrmPushButton) ]OTL(BB.Machine_SafetyCircuitOff_ForSubModule);]]>
 </Text>
