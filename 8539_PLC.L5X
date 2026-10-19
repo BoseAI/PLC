@@ -113227,6 +113227,128 @@ da testare]]>
 </Structure>
 </Data>
 </Tag>
+<Tag Name="OM_EthernetCom_CRS" Class="Standard" TagType="Base" DataType="UDT_OM_AB_EthernetCom" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
+<Description>
+<![CDATA[-]]>
+</Description>
+<Data Format="L5K">
+<![CDATA[[[2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0
+		,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0,2#0],[654239,1000,0],[0,1000,0],[654239,500,0],[-1072983501,1000,229],0,0,0,0,10
+		,5,0,0]]]>
+</Data>
+<Data Format="Decorated">
+<Structure DataType="UDT_OM_AB_EthernetCom">
+<ArrayMember Name="axPTrig" DataType="BOOL" Dimensions="64" Radix="Decimal">
+<Element Index="[0]" Value="0"/>
+<Element Index="[1]" Value="0"/>
+<Element Index="[2]" Value="0"/>
+<Element Index="[3]" Value="0"/>
+<Element Index="[4]" Value="0"/>
+<Element Index="[5]" Value="0"/>
+<Element Index="[6]" Value="0"/>
+<Element Index="[7]" Value="0"/>
+<Element Index="[8]" Value="0"/>
+<Element Index="[9]" Value="0"/>
+<Element Index="[10]" Value="0"/>
+<Element Index="[11]" Value="0"/>
+<Element Index="[12]" Value="0"/>
+<Element Index="[13]" Value="0"/>
+<Element Index="[14]" Value="0"/>
+<Element Index="[15]" Value="0"/>
+<Element Index="[16]" Value="0"/>
+<Element Index="[17]" Value="0"/>
+<Element Index="[18]" Value="0"/>
+<Element Index="[19]" Value="0"/>
+<Element Index="[20]" Value="0"/>
+<Element Index="[21]" Value="0"/>
+<Element Index="[22]" Value="0"/>
+<Element Index="[23]" Value="0"/>
+<Element Index="[24]" Value="0"/>
+<Element Index="[25]" Value="0"/>
+<Element Index="[26]" Value="0"/>
+<Element Index="[27]" Value="0"/>
+<Element Index="[28]" Value="0"/>
+<Element Index="[29]" Value="0"/>
+<Element Index="[30]" Value="0"/>
+<Element Index="[31]" Value="0"/>
+<Element Index="[32]" Value="0"/>
+<Element Index="[33]" Value="0"/>
+<Element Index="[34]" Value="0"/>
+<Element Index="[35]" Value="0"/>
+<Element Index="[36]" Value="0"/>
+<Element Index="[37]" Value="0"/>
+<Element Index="[38]" Value="0"/>
+<Element Index="[39]" Value="0"/>
+<Element Index="[40]" Value="0"/>
+<Element Index="[41]" Value="0"/>
+<Element Index="[42]" Value="0"/>
+<Element Index="[43]" Value="0"/>
+<Element Index="[44]" Value="0"/>
+<Element Index="[45]" Value="0"/>
+<Element Index="[46]" Value="0"/>
+<Element Index="[47]" Value="0"/>
+<Element Index="[48]" Value="0"/>
+<Element Index="[49]" Value="0"/>
+<Element Index="[50]" Value="0"/>
+<Element Index="[51]" Value="0"/>
+<Element Index="[52]" Value="0"/>
+<Element Index="[53]" Value="0"/>
+<Element Index="[54]" Value="0"/>
+<Element Index="[55]" Value="0"/>
+<Element Index="[56]" Value="0"/>
+<Element Index="[57]" Value="0"/>
+<Element Index="[58]" Value="0"/>
+<Element Index="[59]" Value="0"/>
+<Element Index="[60]" Value="0"/>
+<Element Index="[61]" Value="0"/>
+<Element Index="[62]" Value="0"/>
+<Element Index="[63]" Value="0"/>
+</ArrayMember>
+<StructureMember Name="TON_Cip_Drive_network_waiting_time" DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="TON_Drive_first_automatic_reset" DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="TON_Dosing_stack_completed_delay" DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="500"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="0"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="0"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</StructureMember>
+<StructureMember Name="TON_Read_temperature_motor_clock" DataType="TIMER">
+<DataValueMember Name="PRE" DataType="DINT" Radix="Decimal" Value="1000"/>
+<DataValueMember Name="ACC" DataType="DINT" Radix="Decimal" Value="229"/>
+<DataValueMember Name="EN" DataType="BOOL" Value="1"/>
+<DataValueMember Name="TT" DataType="BOOL" Value="1"/>
+<DataValueMember Name="DN" DataType="BOOL" Value="0"/>
+</StructureMember>
+<DataValueMember Name="xCipDrive_NetworkReady" DataType="BOOL" Value="0"/>
+<DataValueMember Name="xReadyDelayedForEnableDriver" DataType="BOOL" Value="0"/>
+<DataValueMember Name="xSpare2" DataType="BOOL" Value="0"/>
+<DataValueMember Name="xSpare3" DataType="BOOL" Value="0"/>
+<DataValueMember Name="xSpare4" DataType="BOOL" Value="0"/>
+<DataValueMember Name="xSpare5" DataType="BOOL" Value="0"/>
+<DataValueMember Name="iSpare1" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="iSpare2" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="iSpare3" DataType="INT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="diAuxCheckMotorTemp_NrOfTotalAxis" DataType="DINT" Radix="Decimal" Value="10"/>
+<DataValueMember Name="diAuxCheckMotorTemp" DataType="DINT" Radix="Decimal" Value="5"/>
+<DataValueMember Name="diSpare2" DataType="DINT" Radix="Decimal" Value="0"/>
+<DataValueMember Name="diSpare3" DataType="DINT" Radix="Decimal" Value="0"/>
+</Structure>
+</Data>
+</Tag>
 <Tag Name="OM_HMI_BatchManagement" Class="Standard" TagType="Base" DataType="UDT_Batch_HMI" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
 <Data Format="L5K">
 <![CDATA[[5,0,0,0,[18,'Scan codebled $00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00$00'
@@ -277106,7 +277228,7 @@ DCS EMERGENCY
 </Rung>
 <Rung Number="14" Type="N">
 <Text>
-<![CDATA[XIO(ALRM[750])XIC(IN.T0130_02_24V)XIC(sDCS.S6212.DCS.FP)[OTE(ALRM[757]) ,OTL(xRq_AlrmDCS) ];]]>
+<![CDATA[XIO(ALRM[750])XIC(IN.T0130_02_24V)XIC(sDCS.S6214.DCS.FP)[OTE(ALRM[757]) ,OTL(xRq_AlrmDCS) ];]]>
 </Text>
 </Rung>
 <Rung Number="15" Type="N">
@@ -279162,7 +279284,7 @@ DCS PILZ
 <![CDATA[IN.S6211_01 := sDCS.S6211.DCS.O1 AND NOT sDCS.S6211.DCS.FP; //E-Stop 11 ]]>
 </Line>
 <Line Number="219">
-<![CDATA[IN.S6212_01 := sDCS.S6212.DCS.O1 AND NOT sDCS.S6212.DCS.FP; //E-Stop 12 ]]>
+<![CDATA[IN.S6212_01 := sDCS.S6214.DCS.O1 AND NOT sDCS.S6214.DCS.FP; //E-Stop 12 (DCS S6214) ]]>
 </Line>
 <Line Number="220">
 <![CDATA[]]>
@@ -297229,7 +297351,7 @@ INPUT
 </Rung>
 <Rung Number="11" Type="N">
 <Text>
-<![CDATA[Manag_AllenBradleyAxis_Real(Axis_Stacker,250001,0,1,0,1,EM_Infeed.xSt_ImmediateStop,SYS_CRS.N[564],SYS_CRS.N[565],SYS_CRS.N[565],SYS_CRS.N[568],SYS_CRS.N[571],SYS_CRS.N[570],SYS_CRS.N[566],SYS_CRS.N[576],SYS_CRS.N[572],SYS_CRS.N[573],SYS_CRS.N[569],10,100,80,BB_CRS,OM_EthernetCom,M9683_01_Stacker_CRS,Mv_Dummy,EM_Infeed.CM_Stacker_CRS,EM_Infeed.CIP_Stacker_CRS,TaskMotion,AxisFault_CRS.M9683_Stacker_CRS,AxisFault,MSG_T9683_Stacker,xNotUsed[7],xNotUsed[7],MSG_CRS[3],MSG_CRS[18],MSG_CRS[12],EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed_HMI_PB_CRS.Rq_xJog_Stacker_Enable,EM_Infeed_HMI_PB_CRS.St_xJog_Stacker_Enable,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed_HMI_PB_CRS.Rq_iJog_Stacker_Direction,EM_Infeed_HMI_PB_CRS.St_iJog_Stacker_Direction,EM_Infeed.CM_Stacker_CRS.iNotUsed,EM_Infeed.CM_Stacker_CRS.iNotUsed,Core_HMI_CRS.Interface.iPageToDisplay,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed_HMI_PB_CRS.Rq_xAbsHome_Stacker_Axis_Save,EM_Infeed_HMI_PB_CRS.St_xAbsHome_Stacker_Axis_Save,Core_HMI_CRS.PB.St_xBrakeTestActive,EM_Infeed.CM_Stacker_CRS.xNotUsed,L_xRqElectricBrakeUnlock,EM_Infeed.CM_Stacker_CRS.xRqhome,EM_Infeed.xPusher_RqResetHomeFromResetCount,EM_Infeed.xRq_ImmediateStop,EM_Infeed.xAutomatic_CycleInhibition,ALRM_CRS[873],ALRM_CRS[874],ALRM_CRS[875]);]]>
+<![CDATA[Manag_AllenBradleyAxis_Real(Axis_Stacker,250001,0,1,0,1,EM_Infeed.xSt_ImmediateStop,SYS_CRS.N[564],SYS_CRS.N[565],SYS_CRS.N[565],SYS_CRS.N[568],SYS_CRS.N[571],SYS_CRS.N[570],SYS_CRS.N[566],SYS_CRS.N[576],SYS_CRS.N[572],SYS_CRS.N[573],SYS_CRS.N[569],10,100,80,BB_CRS,OM_EthernetCom_CRS,M9683_01_Stacker_CRS,Mv_Dummy,EM_Infeed.CM_Stacker_CRS,EM_Infeed.CIP_Stacker_CRS,TaskMotion,AxisFault_CRS.M9683_Stacker_CRS,AxisFault,MSG_T9683_Stacker,xNotUsed[7],xNotUsed[7],MSG_CRS[3],MSG_CRS[18],MSG_CRS[12],EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed_HMI_PB_CRS.Rq_xJog_Stacker_Enable,EM_Infeed_HMI_PB_CRS.St_xJog_Stacker_Enable,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed_HMI_PB_CRS.Rq_iJog_Stacker_Direction,EM_Infeed_HMI_PB_CRS.St_iJog_Stacker_Direction,EM_Infeed.CM_Stacker_CRS.iNotUsed,EM_Infeed.CM_Stacker_CRS.iNotUsed,Core_HMI_CRS.Interface.iPageToDisplay,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed.CM_Stacker_CRS.xNotUsed,EM_Infeed_HMI_PB_CRS.Rq_xAbsHome_Stacker_Axis_Save,EM_Infeed_HMI_PB_CRS.St_xAbsHome_Stacker_Axis_Save,Core_HMI_CRS.PB.St_xBrakeTestActive,EM_Infeed.CM_Stacker_CRS.xNotUsed,L_xRqElectricBrakeUnlock,EM_Infeed.CM_Stacker_CRS.xRqhome,EM_Infeed.xPusher_RqResetHomeFromResetCount,EM_Infeed.xRq_ImmediateStop,EM_Infeed.xAutomatic_CycleInhibition,ALRM_CRS[873],ALRM_CRS[874],ALRM_CRS[875]);]]>
 </Text>
 </Rung>
 <Rung Number="12" Type="N">
@@ -299894,22 +300016,22 @@ Comment: Startup from core studio5000 Cph2]]>
 <RLLContent>
 <Rung Number="0" Type="N">
 <Text>
-<![CDATA[MOVE(1000,OM_EthernetCom.TON_Cip_Drive_network_waiting_time.PRE)MOVE(1000,OM_EthernetCom.TON_Drive_first_automatic_reset.PRE)MOVE(500,OM_EthernetCom.TON_Dosing_stack_completed_delay.PRE)MOVE(1000,OM_EthernetCom.TON_Read_temperature_motor_clock.PRE);]]>
+<![CDATA[MOVE(1000,OM_EthernetCom_CRS.TON_Cip_Drive_network_waiting_time.PRE)MOVE(1000,OM_EthernetCom_CRS.TON_Drive_first_automatic_reset.PRE)MOVE(500,OM_EthernetCom_CRS.TON_Dosing_stack_completed_delay.PRE)MOVE(1000,OM_EthernetCom_CRS.TON_Read_temperature_motor_clock.PRE);]]>
 </Text>
 </Rung>
 <Rung Number="1" Type="N">
 <Text>
-<![CDATA[XIC(TaskMotion.GroupSynced)XIO(TaskMotion.ModuleFault)[[EQ(TaskMotion.GroupFault,0) EQ(TaskMotion.AxisFault,0) ,XIC(OM_EthernetCom.xCipDrive_NetworkReady) ] TON(OM_EthernetCom.TON_Cip_Drive_network_waiting_time,?,?) ,XIC(OM_EthernetCom.TON_Cip_Drive_network_waiting_time.DN) OTE(OM_EthernetCom.xCipDrive_NetworkReady) ,XIO(OM_EthernetCom.xCipDrive_NetworkReady) CLR(OM_EthernetCom.diAuxCheckMotorTemp_NrOfTotalAxis) ];]]>
+<![CDATA[XIC(TaskMotion.GroupSynced)XIO(TaskMotion.ModuleFault)[[EQ(TaskMotion.GroupFault,0) EQ(TaskMotion.AxisFault,0) ,XIC(OM_EthernetCom_CRS.xCipDrive_NetworkReady) ] TON(OM_EthernetCom_CRS.TON_Cip_Drive_network_waiting_time,?,?) ,XIC(OM_EthernetCom_CRS.TON_Cip_Drive_network_waiting_time.DN) OTE(OM_EthernetCom_CRS.xCipDrive_NetworkReady) ,XIO(OM_EthernetCom_CRS.xCipDrive_NetworkReady) CLR(OM_EthernetCom_CRS.diAuxCheckMotorTemp_NrOfTotalAxis) ];]]>
 </Text>
 </Rung>
 <Rung Number="2" Type="N">
 <Text>
-<![CDATA[XIC(OM_EthernetCom.TON_Drive_first_automatic_reset.DN)[TON(OM_EthernetCom.TON_Drive_first_automatic_reset,?,?) ,XIO(OM_EthernetCom.TON_Drive_first_automatic_reset.DN) OTE(BB_CRS.AxisResetFromFirstPowerOn) ];]]>
+<![CDATA[XIC(OM_EthernetCom_CRS.TON_Drive_first_automatic_reset.DN)[TON(OM_EthernetCom_CRS.TON_Drive_first_automatic_reset,?,?) ,XIO(OM_EthernetCom_CRS.TON_Drive_first_automatic_reset.DN) OTE(BB_CRS.AxisResetFromFirstPowerOn) ];]]>
 </Text>
 </Rung>
 <Rung Number="3" Type="N">
 <Text>
-<![CDATA[XIO(OM_EthernetCom.TON_Cip_Drive_network_waiting_time.DN)OTL(BB_CRS.SizeChange_Inhibition);]]>
+<![CDATA[XIO(OM_EthernetCom_CRS.TON_Cip_Drive_network_waiting_time.DN)OTL(BB_CRS.SizeChange_Inhibition);]]>
 </Text>
 </Rung>
 <Rung Number="4" Type="N">
@@ -299919,12 +300041,12 @@ Comment: Startup from core studio5000 Cph2]]>
 </Rung>
 <Rung Number="5" Type="N">
 <Text>
-<![CDATA[XIO(BB_CRS.St_Emergency_ImmediateStop)XIC(BB_CRS.EMF_ON)XIC(BB_CRS.EPN_ON)[TON(OM_EthernetCom.TON_Dosing_stack_completed_delay,?,?) ,XIC(OM_EthernetCom.TON_Dosing_stack_completed_delay.DN) OTE(OM_EthernetCom.xReadyDelayedForEnableDriver) ];]]>
+<![CDATA[XIO(BB_CRS.St_Emergency_ImmediateStop)XIC(BB_CRS.EMF_ON)XIC(BB_CRS.EPN_ON)[TON(OM_EthernetCom_CRS.TON_Dosing_stack_completed_delay,?,?) ,XIC(OM_EthernetCom_CRS.TON_Dosing_stack_completed_delay.DN) OTE(OM_EthernetCom_CRS.xReadyDelayedForEnableDriver) ];]]>
 </Text>
 </Rung>
 <Rung Number="6" Type="N">
 <Text>
-<![CDATA[[XIO(OM_EthernetCom.TON_Read_temperature_motor_clock.DN) TON(OM_EthernetCom.TON_Read_temperature_motor_clock,?,?) ,XIC(OM_EthernetCom.TON_Read_temperature_motor_clock.DN) ONS(OM_EthernetCom.axPTrig[1]) ADD(OM_EthernetCom.diAuxCheckMotorTemp,1,OM_EthernetCom.diAuxCheckMotorTemp) GT(OM_EthernetCom.diAuxCheckMotorTemp,OM_EthernetCom.diAuxCheckMotorTemp_NrOfTotalAxis) CLR(OM_EthernetCom.diAuxCheckMotorTemp) ];]]>
+<![CDATA[[XIO(OM_EthernetCom_CRS.TON_Read_temperature_motor_clock.DN) TON(OM_EthernetCom_CRS.TON_Read_temperature_motor_clock,?,?) ,XIC(OM_EthernetCom_CRS.TON_Read_temperature_motor_clock.DN) ONS(OM_EthernetCom_CRS.axPTrig[1]) ADD(OM_EthernetCom_CRS.diAuxCheckMotorTemp,1,OM_EthernetCom_CRS.diAuxCheckMotorTemp) GT(OM_EthernetCom_CRS.diAuxCheckMotorTemp,OM_EthernetCom_CRS.diAuxCheckMotorTemp_NrOfTotalAxis) CLR(OM_EthernetCom_CRS.diAuxCheckMotorTemp) ];]]>
 </Text>
 </Rung>
 </RLLContent>
@@ -307487,10 +307609,10 @@ Data system displayed maximun limit]]>
 </Rung>
 <Rung Number="2" Type="N">
 <Comment>
-<![CDATA[EMERGENCY]]>
+<![CDATA[EMERGENCY - DISABLED: upstream machine interface not present (DCS not executed in safety)]]>
 </Comment>
 <Text>
-<![CDATA[XIO(sDCS_CRS.EM_From_UpstremMachine.DCS.O1)[OTE(ALRM_CRS[4]) ,OTL(BB_CRS.Rq_AlrmPushButton) ];]]>
+<![CDATA[XIC(BB_CRS.AlwaysOFF)XIO(sDCS_CRS.EM_From_UpstremMachine.DCS.O1)[OTE(ALRM_CRS[4]) ,OTL(BB_CRS.Rq_AlrmPushButton) ];]]>
 </Text>
 </Rung>
 <Rung Number="3" Type="N">
@@ -307527,16 +307649,27 @@ Data system displayed maximun limit]]>
 </Text>
 </Rung>
 <Rung Number="9" Type="N">
+<Comment>
+<![CDATA[SQ6 B9406 guard open]]>
+</Comment>
 <Text>
-<![CDATA[XIC(OUT_CRS.K9470_01)XIO(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.O1)XIO(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.FP)[OTE(ALRM_CRS[98]) ,OTL(BB_CRS.Rq_AlrmGuard) ];]]>
+<![CDATA[[XIO(SafetyIN_CRS.B9406_01_CH0) ,XIO(SafetyIN_CRS.B9406_01_CH1) ][OTE(ALRM_CRS[82]) ,OTL(BB_CRS.Rq_AlrmGuard) ];]]>
 </Text>
 </Rung>
 <Rung Number="10" Type="N">
+<Comment>
+<![CDATA[DISABLED: upstream machine interface not present (DCS not executed in safety)]]>
+</Comment>
+<Text>
+<![CDATA[XIC(BB_CRS.AlwaysOFF)XIC(OUT_CRS.K9470_01)XIO(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.O1)XIO(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.FP)[OTE(ALRM_CRS[98]) ,OTL(BB_CRS.Rq_AlrmGuard) ];]]>
+</Text>
+</Rung>
+<Rung Number="11" Type="N">
 <Text>
 <![CDATA[XIO(BB_CRS.Machine_MovingForSubModule)OTU(BB_CRS.Machine_SafetyCircuitOff_ForSubModule);]]>
 </Text>
 </Rung>
-<Rung Number="11" Type="N">
+<Rung Number="12" Type="N">
 <Text>
 <![CDATA[[XIO(IN_CRS.K9440_01) ,XIC(BB_CRS.Rq_AlrmGuard) ,XIC(BB_CRS.Rq_AlrmPushButton) ,XIC(xRq_AlrmDCS) ]OTL(BB_CRS.Machine_SafetyCircuitOff_ForSubModule);]]>
 </Text>
@@ -308098,28 +308231,42 @@ TIA15.1-BaseCPH2 Studio5000]]>
 </Text>
 </Rung>
 <Rung Number="11" Type="N">
+<Comment>
+<![CDATA[DCS SQ6 B9406 fault]]>
+</Comment>
 <Text>
-<![CDATA[XIO(ALRM_CRS[750])[XIC(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.FP) ,XIO(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.O1) XIC(ALRM_CRS[762]) ][OTE(ALRM_CRS[762]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
+<![CDATA[XIO(ALRM_CRS[750])[XIC(sDCS_CRS.B9406.DCS.FP) ,XIO(sDCS_CRS.B9406.DCS.O1) XIC(ALRM_CRS[766]) ][OTE(ALRM_CRS[766]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
 </Text>
 </Rung>
 <Rung Number="12" Type="N">
+<Comment>
+<![CDATA[DISABLED: upstream machine interface not present (DCS not executed in safety)]]>
+</Comment>
 <Text>
-<![CDATA[XIO(ALRM_CRS[750])[XIO(K9605_01:5:I.Pt04Status) ,[XIO(SafetyOUT_CRS.K9200_01) XIO(SafetyOUT_CRS.K9200_02) XIO(SafetyIN_CRS.K9200_01_02) ,[XIC(SafetyOUT_CRS.K9200_01) ,XIC(SafetyOUT_CRS.K9200_02) ] XIC(SafetyIN_CRS.K9200_01_02) ] [,TON(xAlarm763_TON,?,?) ] XIC(xAlarm763_TON.DN) ][OTE(ALRM_CRS[763]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
+<![CDATA[XIC(BB_CRS.AlwaysOFF)XIO(ALRM_CRS[750])[XIC(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.FP) ,XIO(sDCS_CRS.GuardOpen_From_UpstremMachine.DCS.O1) XIC(ALRM_CRS[762]) ][OTE(ALRM_CRS[762]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
 </Text>
 </Rung>
 <Rung Number="13" Type="N">
 <Text>
-<![CDATA[XIO(ALRM_CRS[750])[XIO(K9605_01:5:I.Pt05Status) ,[XIO(SafetyOUT_CRS.K9440_01) XIO(SafetyOUT_CRS.K9440_02) XIO(SafetyIN_CRS.K9440_01_02) ,[XIC(SafetyOUT_CRS.K9440_01) ,XIC(SafetyOUT_CRS.K9440_02) ] XIC(SafetyIN_CRS.K9440_01_02) ] [,TON(xAlarm765_TON,?,?) ] XIC(xAlarm765_TON.DN) ][OTE(ALRM_CRS[765]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
+<![CDATA[XIO(ALRM_CRS[750])[XIO(K9605_01:5:I.Pt04Status) ,[XIO(SafetyOUT_CRS.K9200_01) XIO(SafetyOUT_CRS.K9200_02) XIO(SafetyIN_CRS.K9200_01_02) ,[XIC(SafetyOUT_CRS.K9200_01) ,XIC(SafetyOUT_CRS.K9200_02) ] XIC(SafetyIN_CRS.K9200_01_02) ] [,TON(xAlarm763_TON,?,?) ] XIC(xAlarm763_TON.DN) ][OTE(ALRM_CRS[763]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
 </Text>
 </Rung>
 <Rung Number="14" Type="N">
 <Text>
-<![CDATA[XIO(ALRM_CRS[750])[XIC(sDCS_CRS.EM_From_UpstremMachine.DCS.FP) ,XIO(sDCS_CRS.EM_From_UpstremMachine.DCS.O1) XIC(ALRM_CRS[756]) ][OTE(ALRM_CRS[756]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
+<![CDATA[XIO(ALRM_CRS[750])[XIO(K9605_01:5:I.Pt05Status) ,[XIO(SafetyOUT_CRS.K9440_01) XIO(SafetyOUT_CRS.K9440_02) XIO(SafetyIN_CRS.K9440_01_02) ,[XIC(SafetyOUT_CRS.K9440_01) ,XIC(SafetyOUT_CRS.K9440_02) ] XIC(SafetyIN_CRS.K9440_01_02) ] [,TON(xAlarm765_TON,?,?) ] XIC(xAlarm765_TON.DN) ][OTE(ALRM_CRS[765]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
 </Text>
 </Rung>
 <Rung Number="15" Type="N">
+<Comment>
+<![CDATA[DISABLED: upstream machine interface not present (DCS not executed in safety)]]>
+</Comment>
 <Text>
-<![CDATA[XIO(ALRM_CRS[750])[XIO(K0605_01:3:I.Pt04Status) ,[XIO(SafetyOUT_CRS.K9199_01) XIO(SafetyOUT_CRS.K9199_02) XIO(SafetyIN_CRS.K9199_01_02) ,[XIC(SafetyOUT_CRS.K9199_01) ,XIC(SafetyOUT_CRS.K9199_02) ] XIC(SafetyIN_CRS.K9199_01_02) ] [,TON(xAlarm757_TON,?,?) ] XIC(xAlarm757_TON.DN) ][OTE(ALRM_CRS[757]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
+<![CDATA[XIC(BB_CRS.AlwaysOFF)XIO(ALRM_CRS[750])[XIC(sDCS_CRS.EM_From_UpstremMachine.DCS.FP) ,XIO(sDCS_CRS.EM_From_UpstremMachine.DCS.O1) XIC(ALRM_CRS[756]) ][OTE(ALRM_CRS[756]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
+</Text>
+</Rung>
+<Rung Number="16" Type="N">
+<Text>
+<![CDATA[XIO(ALRM_CRS[750])[XIO(K9605_01:3:I.Pt04Status) ,[XIO(SafetyOUT_CRS.K9199_01) XIO(SafetyOUT_CRS.K9199_02) XIO(SafetyIN_CRS.K9199_01_02) ,[XIC(SafetyOUT_CRS.K9199_01) ,XIC(SafetyOUT_CRS.K9199_02) ] XIC(SafetyIN_CRS.K9199_01_02) ] [,TON(xAlarm757_TON,?,?) ] XIC(xAlarm757_TON.DN) ][OTE(ALRM_CRS[757]) ,OTL(BB_CRS.Rq_EmergencyImmediateStop) ];]]>
 </Text>
 </Rung>
 </RLLContent>
@@ -312222,7 +312369,7 @@ The CROut_Enable bit is then used to Enable the CROUT instruction.
 </Rung>
 <Rung Number="20" Type="N">
 <Text>
-<![CDATA[XIC(K0605_01:7:I.Pt00Data)XIC(K0605_01:7:I.Pt01Data)OTE(sDCS.B2812.InputStatus);]]>
+<![CDATA[XIC(K0605_01:7:I.Pt00Status)XIC(K0605_01:7:I.Pt01Status)OTE(sDCS.B2812.InputStatus);]]>
 </Text>
 </Rung>
 <Rung Number="21" Type="N">
@@ -312235,7 +312382,7 @@ The CROut_Enable bit is then used to Enable the CROUT instruction.
 </Rung>
 <Rung Number="22" Type="N">
 <Text>
-<![CDATA[XIC(K0605_01:8:I.Pt00Data)XIC(K0605_01:8:I.Pt01Data)OTE(sDCS.K2810.InputStatus);]]>
+<![CDATA[XIC(K0605_01:8:I.Pt00Status)XIC(K0605_01:8:I.Pt01Status)OTE(sDCS.K2810.InputStatus);]]>
 </Text>
 </Rung>
 <Rung Number="23" Type="N">
@@ -312894,7 +313041,7 @@ The CROut_Enable bit is then used to Enable the CROUT instruction.
 </Rung>
 <Rung Number="11" Type="N">
 <Text>
-<![CDATA[CROUT(sDCS.PalletMagazine,POSITIVE,500,SafetyMagPalCircut_EN,SafetyMagPalCircut_EN,SafetyMagPalCircut_EN,1,1,sDCS.xFEdgeBlockReset);]]>
+<![CDATA[CROUT(sDCS.PalletMagazine,NEGATIVE,500,SafetyMagPalCircut_EN,SafetyIN.K7802_01_FBK,SafetyIN.K7802_01_FBK,1,1,sDCS.xFEdgeBlockReset);]]>
 </Text>
 </Rung>
 <Rung Number="12" Type="N">
