@@ -96678,82 +96678,6 @@ da testare]]>
 <DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
 </Data>
 </Tag>
-<Tag Name="FaultBuffer" Class="Standard" TagType="Base" DataType="INT" Dimensions="64" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Description>
-<![CDATA[Alarm buffer area]]>
-</Description>
-<Data Format="L5K">
-<![CDATA[[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0]]]>
-</Data>
-<Data Format="Decorated">
-<Array DataType="INT" Dimensions="64" Radix="Decimal">
-<Element Index="[0]" Value="0"/>
-<Element Index="[1]" Value="0"/>
-<Element Index="[2]" Value="0"/>
-<Element Index="[3]" Value="0"/>
-<Element Index="[4]" Value="0"/>
-<Element Index="[5]" Value="0"/>
-<Element Index="[6]" Value="0"/>
-<Element Index="[7]" Value="0"/>
-<Element Index="[8]" Value="0"/>
-<Element Index="[9]" Value="0"/>
-<Element Index="[10]" Value="0"/>
-<Element Index="[11]" Value="0"/>
-<Element Index="[12]" Value="0"/>
-<Element Index="[13]" Value="0"/>
-<Element Index="[14]" Value="0"/>
-<Element Index="[15]" Value="0"/>
-<Element Index="[16]" Value="0"/>
-<Element Index="[17]" Value="0"/>
-<Element Index="[18]" Value="0"/>
-<Element Index="[19]" Value="0"/>
-<Element Index="[20]" Value="0"/>
-<Element Index="[21]" Value="0"/>
-<Element Index="[22]" Value="0"/>
-<Element Index="[23]" Value="0"/>
-<Element Index="[24]" Value="0"/>
-<Element Index="[25]" Value="0"/>
-<Element Index="[26]" Value="0"/>
-<Element Index="[27]" Value="0"/>
-<Element Index="[28]" Value="0"/>
-<Element Index="[29]" Value="0"/>
-<Element Index="[30]" Value="0"/>
-<Element Index="[31]" Value="0"/>
-<Element Index="[32]" Value="0"/>
-<Element Index="[33]" Value="0"/>
-<Element Index="[34]" Value="0"/>
-<Element Index="[35]" Value="0"/>
-<Element Index="[36]" Value="0"/>
-<Element Index="[37]" Value="0"/>
-<Element Index="[38]" Value="0"/>
-<Element Index="[39]" Value="0"/>
-<Element Index="[40]" Value="0"/>
-<Element Index="[41]" Value="0"/>
-<Element Index="[42]" Value="0"/>
-<Element Index="[43]" Value="0"/>
-<Element Index="[44]" Value="0"/>
-<Element Index="[45]" Value="0"/>
-<Element Index="[46]" Value="0"/>
-<Element Index="[47]" Value="0"/>
-<Element Index="[48]" Value="0"/>
-<Element Index="[49]" Value="0"/>
-<Element Index="[50]" Value="0"/>
-<Element Index="[51]" Value="0"/>
-<Element Index="[52]" Value="0"/>
-<Element Index="[53]" Value="0"/>
-<Element Index="[54]" Value="0"/>
-<Element Index="[55]" Value="0"/>
-<Element Index="[56]" Value="0"/>
-<Element Index="[57]" Value="0"/>
-<Element Index="[58]" Value="0"/>
-<Element Index="[59]" Value="0"/>
-<Element Index="[60]" Value="0"/>
-<Element Index="[61]" Value="0"/>
-<Element Index="[62]" Value="0"/>
-<Element Index="[63]" Value="0"/>
-</Array>
-</Data>
-</Tag>
 <Tag Name="FaultPresent" Class="Standard" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
 <Data Format="L5K">
 <![CDATA[0]]>
@@ -169947,128 +169871,6 @@ for size change-over]]>
 </DataValueMember>
 </StructureMember>
 </Structure>
-</Data>
-</Tag>
-<Tag Name="SpeedWork1" Class="Standard" TagType="Base" DataType="DINT" Dimensions="30" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Comments>
-<Comment Operand="[0]">
-<![CDATA[GeneralWorkSpeed]]>
-</Comment>
-<Comment Operand="[1]">
-<![CDATA[InfeedBelt.WorkSpeed]]>
-</Comment>
-<Comment Operand="[2]">
-<![CDATA[WormScrew.WorkSpeed]]>
-</Comment>
-<Comment Operand="[3]">
-<![CDATA[WormScrewBelt.WorkSpeed]]>
-</Comment>
-<Comment Operand="[4]">
-<![CDATA[Case partial filling forward work speed]]>
-</Comment>
-<Comment Operand="[5]">
-<![CDATA[Case partial filling return work speed]]>
-</Comment>
-<Comment Operand="[6]">
-<![CDATA[Case last filling return work speed]]>
-</Comment>
-<Comment Operand="[7]">
-<![CDATA[Case last filling forward work speed]]>
-</Comment>
-<Comment Operand="[8]">
-<![CDATA[Robot.WorkSpeed to Pick2]]>
-</Comment>
-<Comment Operand="[9]">
-<![CDATA[RowDividerReturnSpeed]]>
-</Comment>
-<Comment Operand="[10]">
-<![CDATA[Case-packing machine Gen.WorkSpeed]]>
-</Comment>
-<Comment Operand="[11]">
-<![CDATA[Pick Up work speed 2]]>
-</Comment>
-<Comment Operand="[12]">
-<![CDATA[Pick Up work speed 3]]>
-</Comment>
-<Comment Operand="[13]">
-<![CDATA[Transport Forward]]>
-</Comment>
-<Comment Operand="[14]">
-<![CDATA[Transport Backward]]>
-</Comment>
-<Comment Operand="[17]">
-<![CDATA[WormScrewBelt.WorkSpeedLow]]>
-</Comment>
-<Comment Operand="[19]">
-<![CDATA[Working speed calculation auxiliary]]>
-</Comment>
-<Comment Operand="[20]">
-<![CDATA[Case Packer speed 3]]>
-</Comment>
-<Comment Operand="[21]">
-<![CDATA[Layering lower rising speed]]>
-</Comment>
-<Comment Operand="[22]">
-<![CDATA[Layering lower descent speed]]>
-</Comment>
-<Comment Operand="[23]">
-<![CDATA[Layering upper rising speed]]>
-</Comment>
-<Comment Operand="[24]">
-<![CDATA[Layering upper descent speed]]>
-</Comment>
-<Comment Operand="[25]">
-<![CDATA[Pack transfer partial transfer speed]]>
-</Comment>
-<Comment Operand="[26]">
-<![CDATA[Pack transfer total transfer speed]]>
-</Comment>
-<Comment Operand="[27]">
-<![CDATA[Pack transfer return speed]]>
-</Comment>
-<Comment Operand="[28]">
-<![CDATA[Robot speed with product]]>
-</Comment>
-<Comment Operand="[29]">
-<![CDATA[Robot speed without product]]>
-</Comment>
-</Comments>
-<Data Format="L5K">
-<![CDATA[[100,1,3,66,25,30,45,30,1,76,8,750,600,500,300,50,55,0,38,0,57,13,18,15,20,60,70,85,50,55]]]>
-</Data>
-<Data Format="Decorated">
-<Array DataType="DINT" Dimensions="30" Radix="Decimal">
-<Element Index="[0]" Value="100"/>
-<Element Index="[1]" Value="1"/>
-<Element Index="[2]" Value="3"/>
-<Element Index="[3]" Value="66"/>
-<Element Index="[4]" Value="25"/>
-<Element Index="[5]" Value="30"/>
-<Element Index="[6]" Value="45"/>
-<Element Index="[7]" Value="30"/>
-<Element Index="[8]" Value="1"/>
-<Element Index="[9]" Value="76"/>
-<Element Index="[10]" Value="8"/>
-<Element Index="[11]" Value="750"/>
-<Element Index="[12]" Value="600"/>
-<Element Index="[13]" Value="500"/>
-<Element Index="[14]" Value="300"/>
-<Element Index="[15]" Value="50"/>
-<Element Index="[16]" Value="55"/>
-<Element Index="[17]" Value="0"/>
-<Element Index="[18]" Value="38"/>
-<Element Index="[19]" Value="0"/>
-<Element Index="[20]" Value="57"/>
-<Element Index="[21]" Value="13"/>
-<Element Index="[22]" Value="18"/>
-<Element Index="[23]" Value="15"/>
-<Element Index="[24]" Value="20"/>
-<Element Index="[25]" Value="60"/>
-<Element Index="[26]" Value="70"/>
-<Element Index="[27]" Value="85"/>
-<Element Index="[28]" Value="50"/>
-<Element Index="[29]" Value="55"/>
-</Array>
 </Data>
 </Tag>
 <Tag Name="StandardValidationInterface" Class="Standard" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
@@ -271552,22 +271354,6 @@ CYCLE
 <DataValue DataType="DINT" Radix="Decimal" Value="16"/>
 </Data>
 </Tag>
-<Tag Name="diSearchAlrmBit" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[8]]>
-</Data>
-<Data Format="Decorated">
-<DataValue DataType="DINT" Radix="Decimal" Value="8"/>
-</Data>
-</Tag>
-<Tag Name="diSearchAlrmDWord" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[1024]]>
-</Data>
-<Data Format="Decorated">
-<DataValue DataType="DINT" Radix="Decimal" Value="1024"/>
-</Data>
-</Tag>
 <Tag Name="diWarnBitPoint" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
 <Description>
 <![CDATA[Warning message search pointer]]>
@@ -271585,14 +271371,6 @@ CYCLE
 </Data>
 <Data Format="Decorated">
 <DataValue DataType="DINT" Radix="Decimal" Value="63"/>
-</Data>
-</Tag>
-<Tag Name="di_indexFaultBuffer" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[5]]>
-</Data>
-<Data Format="Decorated">
-<DataValue DataType="DINT" Radix="Decimal" Value="5"/>
 </Data>
 </Tag>
 <Tag Name="EmptySpaces" TagType="Base" DataType="Name" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
@@ -275979,14 +275757,6 @@ Data system displayed maximun limit]]>
 <DataValue DataType="BOOL" Radix="Decimal" Value="0"/>
 </Data>
 </Tag>
-<Tag Name="xMemAlrmNr" TagType="Base" DataType="DINT" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
-<Data Format="L5K">
-<![CDATA[88]]>
-</Data>
-<Data Format="Decorated">
-<DataValue DataType="DINT" Radix="Decimal" Value="88"/>
-</Data>
-</Tag>
 <Tag Name="xMsgFinded" TagType="Base" DataType="BOOL" Radix="Decimal" Constant="false" ExternalAccess="Read/Write" OpcUaAccess="None">
 <Data Format="L5K">
 <![CDATA[0]]>
@@ -279998,13 +279768,6 @@ DCS PILZ
 </Rung>
 </RLLContent>
 </Routine>
-<Routine Name="MIP" Type="ST">
-<STContent>
-<Line Number="0">
-<![CDATA[]]>
-</Line>
-</STContent>
-</Routine>
 <Routine Name="MovingRequest" Type="RLL">
 <RLLContent>
 <Rung Number="0" Type="N">
@@ -281291,26 +281054,6 @@ PRODUCT DELETING FROM DB PRODUCTS
 </Comment>
 <Text>
 <![CDATA[XIC(Timers.N[306].DN)[MOVE(67,Core_HMI.Interface.iPageToDisplay) ,OTU(UM_Machine.PAL.PageRq_UpdateSpeedToSize) ];]]>
-</Text>
-</Rung>
-</RLLContent>
-</Routine>
-<Routine Name="PAL_SpeedCalculation" Type="RLL">
-<RLLContent>
-<Rung Number="0" Type="N">
-<Comment>
-<![CDATA[LOW SPEED SCALED]]>
-</Comment>
-<Text>
-<![CDATA[[CPT(SpeedWork1[28],PAL_SizeWork.SpeedRobot_WithProd*SpeedWork1[0]/100) ,LE(SpeedWork1[28],0) MOVE(1,SpeedWork1[28]) ,MOVE(SpeedWork1[28],SpeedWork1[15]) ];]]>
-</Text>
-</Rung>
-<Rung Number="1" Type="N">
-<Comment>
-<![CDATA[HIGH SPEED SCALED]]>
-</Comment>
-<Text>
-<![CDATA[[CPT(SpeedWork1[29],PAL_SizeWork.SpeedRobot_WithoutProd*SpeedWork1[0]/100) ,LE(SpeedWork1[29],0) MOVE(1,SpeedWork1[29]) ,MOVE(SpeedWork1[29],SpeedWork1[16]) ];]]>
 </Text>
 </Rung>
 </RLLContent>
@@ -282637,163 +282380,6 @@ valutare se implementarlo HMI]]>
 </Text>
 </Rung>
 </RLLContent>
-</Routine>
-<Routine Name="_CheckAlrm" Type="ST">
-<STContent>
-<Line Number="0">
-<![CDATA[If BB.FirstScan then]]>
-</Line>
-<Line Number="1">
-<![CDATA[	diSearchAlrmDWord:=1;]]>
-</Line>
-<Line Number="2">
-<![CDATA[end_if;	]]>
-</Line>
-<Line Number="3">
-<![CDATA[]]>
-</Line>
-<Line Number="4">
-<![CDATA[for diSearchAlrmDWord:=1 to 1023 by 1 do]]>
-</Line>
-<Line Number="5">
-<![CDATA[	]]>
-</Line>
-<Line Number="6">
-<![CDATA[]]>
-</Line>
-<Line Number="7">
-<![CDATA[	IF ALRM[diSearchAlrmDWord] then]]>
-</Line>
-<Line Number="8">
-<![CDATA[		xMemAlrmNr:=diSearchAlrmDWord;]]>
-</Line>
-<Line Number="9">
-<![CDATA[		BB.Rq_EmergencyPhaseStop:=1;]]>
-</Line>
-<Line Number="10">
-<![CDATA[		di_indexFaultBuffer:= diSearchAlrmDWord/16;]]>
-</Line>
-<Line Number="11">
-<![CDATA[		diSearchAlrmBit:= diSearchAlrmDWord MOD 16;]]>
-</Line>
-<Line Number="12">
-<![CDATA[	]]>
-</Line>
-<Line Number="13">
-<![CDATA[		case diSearchAlrmBit of]]>
-</Line>
-<Line Number="14">
-<![CDATA[		]]>
-</Line>
-<Line Number="15">
-<![CDATA[		0:]]>
-</Line>
-<Line Number="16">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].0:=1;]]>
-</Line>
-<Line Number="17">
-<![CDATA[		1:]]>
-</Line>
-<Line Number="18">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].1:=1;]]>
-</Line>
-<Line Number="19">
-<![CDATA[		2:]]>
-</Line>
-<Line Number="20">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].2:=1;]]>
-</Line>
-<Line Number="21">
-<![CDATA[		3:]]>
-</Line>
-<Line Number="22">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].3:=1;]]>
-</Line>
-<Line Number="23">
-<![CDATA[		4:]]>
-</Line>
-<Line Number="24">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].4:=1;]]>
-</Line>
-<Line Number="25">
-<![CDATA[		5:]]>
-</Line>
-<Line Number="26">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].5:=1;]]>
-</Line>
-<Line Number="27">
-<![CDATA[		6:]]>
-</Line>
-<Line Number="28">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].6:=1;]]>
-</Line>
-<Line Number="29">
-<![CDATA[		7:]]>
-</Line>
-<Line Number="30">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].7:=1;]]>
-</Line>
-<Line Number="31">
-<![CDATA[		8:]]>
-</Line>
-<Line Number="32">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].8:=1;]]>
-</Line>
-<Line Number="33">
-<![CDATA[		9:]]>
-</Line>
-<Line Number="34">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].9:=1;]]>
-</Line>
-<Line Number="35">
-<![CDATA[		10:]]>
-</Line>
-<Line Number="36">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].10:=1;]]>
-</Line>
-<Line Number="37">
-<![CDATA[		11:]]>
-</Line>
-<Line Number="38">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].11:=1;]]>
-</Line>
-<Line Number="39">
-<![CDATA[		12:]]>
-</Line>
-<Line Number="40">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].12:=1;]]>
-</Line>
-<Line Number="41">
-<![CDATA[		13:]]>
-</Line>
-<Line Number="42">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].13:=1;]]>
-</Line>
-<Line Number="43">
-<![CDATA[		14:]]>
-</Line>
-<Line Number="44">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].14:=1;]]>
-</Line>
-<Line Number="45">
-<![CDATA[		15:]]>
-</Line>
-<Line Number="46">
-<![CDATA[			FaultBuffer[di_indexFaultBuffer].15:=1;]]>
-</Line>
-<Line Number="47">
-<![CDATA[			]]>
-</Line>
-<Line Number="48">
-<![CDATA[		end_case;	]]>
-</Line>
-<Line Number="49">
-<![CDATA[	end_if;]]>
-</Line>
-<Line Number="50">
-<![CDATA[end_for;]]>
-</Line>
-</STContent>
 </Routine>
 <Routine Name="_NoteOnGroups_UM_Machine" Type="ST">
 <Description>
