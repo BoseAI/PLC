@@ -277985,7 +277985,7 @@ DCS PILZ
 <![CDATA[]]>
 </Line>
 <Line Number="193">
-<![CDATA[TONR(TonrReset);]]>
+<![CDATA[TonrReset.Reset := NOT BB.Alarm_ResetRqPulse; TONR(TonrReset);]]>
 </Line>
 <Line Number="194">
 <![CDATA[TonrReset.TimerEnable := BB.Alarm_ResetRqPulse;]]>
@@ -280531,7 +280531,7 @@ PRODUCT DELETING FROM DB PRODUCTS
 </Rung>
 <Rung Number="2" Type="N">
 <Text>
-<![CDATA[ADD(SYS.N[0],1,SYS.N[0])EQ(UM_HMI.Pal.St_iSizeChange_NewSize_Number,0)[OTL(BB.SizeChange_NotCorrect) ,OTU(BB.SizeChange_OK) ,RET() ];]]>
+<![CDATA[ADD(SYS.N[0],1,SYS.N[0])EQ(UM_HMI.Machine.St_iSizeChange_NewSize_Number,0)[OTL(BB.SizeChange_NotCorrect) ,OTU(BB.SizeChange_OK) ,RET() ];]]>
 </Text>
 </Rung>
 <Rung Number="3" Type="N">
@@ -281319,12 +281319,12 @@ PRODUCT DELETING FROM DB PRODUCTS
 <RLLContent>
 <Rung Number="0" Type="N">
 <Text>
-<![CDATA[XIC(Core_HMI.PB.Rq_xPalSysData_ScrollUp)ONS(UM_Machine.axPTrig[37])[ADD(iAux[5],1,iAux[3]) ,GE(iAux[5],DataDefined.PalSysDataNoMax) MOVE(0,iAux[5]) ,LT(iAux[5],0) CPT(iAux[5],DataDefined.PalSysDataNoMax-1) ,MOVE(iAux[5],SYS_Pal.SelSys) ];]]>
+<![CDATA[XIC(Core_HMI.PB.Rq_xPalSysData_ScrollUp)ONS(UM_Machine.axPTrig[47])[ADD(iAux[4],1,iAux[4]) ,GE(iAux[4],DataDefined.PalSysDataNoMax) MOVE(0,iAux[4]) ,LT(iAux[4],0) CPT(iAux[4],DataDefined.PalSysDataNoMax-1) ,MOVE(iAux[4],SYS_Pal.SelSys) ];]]>
 </Text>
 </Rung>
 <Rung Number="1" Type="N">
 <Text>
-<![CDATA[XIC(Core_HMI.PB.Rq_xPalSysData_ScrollDown)ONS(UM_Machine.axPTrig[38])[SUB(iAux[5],1,iAux[3]) ,GE(iAux[5],DataDefined.PalSysDataNoMax) MOVE(0,iAux[5]) ,LT(iAux[5],0) CPT(iAux[5],DataDefined.PalSysDataNoMax-1) ,MOVE(iAux[5],SYS_Pal.SelSys) ];]]>
+<![CDATA[XIC(Core_HMI.PB.Rq_xPalSysData_ScrollDown)ONS(UM_Machine.axPTrig[38])[SUB(iAux[4],1,iAux[4]) ,GE(iAux[4],DataDefined.PalSysDataNoMax) MOVE(0,iAux[4]) ,LT(iAux[4],0) CPT(iAux[4],DataDefined.PalSysDataNoMax-1) ,MOVE(iAux[4],SYS_Pal.SelSys) ];]]>
 </Text>
 </Rung>
 <Rung Number="2" Type="N">
@@ -281582,7 +281582,7 @@ Prod Cycles Clear Management
 </Rung>
 <Rung Number="23" Type="N">
 <Text>
-<![CDATA[[GE(UM_HMI.Production.diPartialCounterReject_LabelCtrl,1000000000) ,XIC(UM_HMI.Production.Rq_xResetPartialCounter_Reject_LabelCtrl) ][OTE(UM_HMI.Production.St_xResetPartialCounter_Reject_LabelCtrl) ,CLR(UM_HMI.Production.diPartialCounterReject_AggrFail) ,OTU(UM_HMI.Production.Rq_xResetPartialCounter_Reject_LabelCtrl) ];]]>
+<![CDATA[[GE(UM_HMI.Production.diPartialCounterReject_LabelCtrl,1000000000) ,XIC(UM_HMI.Production.Rq_xResetPartialCounter_Reject_LabelCtrl) ][OTE(UM_HMI.Production.St_xResetPartialCounter_Reject_LabelCtrl) ,CLR(UM_HMI.Production.diPartialCounterReject_LabelCtrl) ,OTU(UM_HMI.Production.Rq_xResetPartialCounter_Reject_LabelCtrl) ];]]>
 </Text>
 </Rung>
 <Rung Number="24" Type="N">
